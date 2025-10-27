@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 6</title>
+    <style>
+        #pointerhover:hover {cursor:pointer;}
+    </style>
+</head>
+<body>
+    <button type="button" onclick="alert('Hej');">Alert vid Onclick</button>
+    
+    <p onclick="document.body.style.backgroundColor='red'">Tryck för röd bakgrund</p>
+
+    <p id="hover" onmouseover="document.getElementById('hover').style.color='yellow'"
+    onmouseout="document.getElementById('hover').style.color=''">
+    Gul färg vid hover, återgår till standard därefter. </p>
+
+    <p id="pointerhover">Pointer vid hover</p>
+</body>
+</html>
