@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="beraknaArea()">Beräkna Rektangelns Area</button>
+    <p id="resultat"></p><!-- Paragraph-element där resultatet av beräkningen kommer att visas -->
+
+    <script>
+        function beraknaArea() {
+            var langd = prompt("Ange rektangelns längd i meter:");
+            var bredd = prompt("Ange rektangelns bredd i meter:");
+
+            // Kontrollerar att båda inmatningarna är giltiga numeriska värden större än noll
+            if (!langd || !bredd || isNaN(langd) || isNaN(bredd) || langd <= 0 || bredd <= 0) {
+						//I JavaScript refererar innerText till en egenskap som används för att få eller sätta textinnehållet i ett specifikt HTML-element.
+                document.getElementById('resultat').innerText = "Vänligen ange giltiga, positiva numeriska mått för både längd och bredd.";
+                 resultat.style.color = "red"; 
+                return; // Avbryter funktionen ifall felaktiga värden upptäcks. När man använder return utan ett värde fungerar det som en tidig avslutningspunkt för funktionen.
+
+
+            }
+
+            var area = langd * bredd; // Beräknar rektangelns area
+            document.getElementById('resultat').innerText = "Rektangelns area är: " + area + " kvadratmeter.";
+        }
+    </script>
+</body>
+</html>

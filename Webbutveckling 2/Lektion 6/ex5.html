@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temanbyte exempel/ Theme Switching Example</title>
+ <!-- <link rel="stylesheet" href="styles.css">-->
+  <style>
+    :root {
+  --primary-color: red;
+  --secondary-color: yellow;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.box {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 20px;
+}
+
+.theme2 {
+  --primary-color: blue;
+  --secondary-color: white;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Temanbyte exempel / Theme Switching Example</h1>
+  <button id="theme-switcher">Byt tema / Switch Theme</button>
+
+  <div class="content">
+    <p>Detta är ett exempel på innehåll.This is some sample content.</p>
+    <div class="box">Box</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

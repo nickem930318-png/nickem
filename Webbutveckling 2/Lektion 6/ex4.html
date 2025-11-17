@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplikationstabell</title>
+    <script>
+        function promptForNumber() {
+            let number = prompt("Mata in ett tal mellan 1 och 10:");
+            number = parseInt(number); // Konverterar inmatningen till ett heltal
+
+            if (number >= 1 && number <= 10) {
+                showMultiplicationTable(number);
+            } else {
+                alert("Ogiltigt tal. Vänligen mata in ett tal mellan 1 och 10.");
+            }
+        }
+
+        function showMultiplicationTable(number) {
+            
+let result = `<h2>Multiplikationstabell för ${number}</h2>`;
+/*Operatorn (+=) kallas tilläggsoperator ,används för att lägga till ett värde 
+till en befintlig variabel och spara resultatet i samma variabel. */
+//+= för att bygga upp HTML-strukturen i variabeln result.
+//tabellens starttagg.
+            result += '<table border="1">';
+            for (let i = 1; i <= 10; i++) {
+                result += `<tr><td>${number} x ${i}</td><td>${number * i}</td></tr>`;
+            }
+            //tabellens sluttagg
+            result += '</table>'; //På detta sätt byggs result dynamiskt, och HTML-koden lagras i variabeln.
+            
+            //innerHTML är en egenskap som tillåter åtkomst och ändring av HTML-innehållet inuti ett element. 
+            document.getElementById('tableContainer').innerHTML = result;
+        }
+    </script>
+</head>
+<body onload="promptForNumber()">
+    <div id="tableContainer"></div>
+</body>
+</html>

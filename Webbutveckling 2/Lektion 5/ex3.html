@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function answer(num){
+            let value=prompt("Vänligen välj en siffra mellan 1 och 2: ")
+            switch (value){ // Parametern value kommer matchas mot olika cases
+            case "1":
+                document.write("Du har valt nummer 1.")
+                break
+            case "2":
+                document.write("Du har valt nummer 2.")
+                break
+            default:
+                document.write("Du har angett ett felaktigt värde." + "<br>")
+                document.write("Lyssna på vad jag säger tack!")
+
+        }
+    }
+    answer()
+    </script>
+</body>
+</html>

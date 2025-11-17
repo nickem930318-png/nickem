@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Språk case</title>
+</head>
+<body>
+    <script>
+        function answer(språk) {
+            let svar=prompt("Vilket språk talar du? Svenska / Engelska / Binary ")
+            svar = svar.toLowerCase()
+            switch (svar){
+            case "svenska":
+                document.write("Hej, trevligt att träffas!")
+                break
+            case "engelska":
+                document.write("Hi, nice to meet you!")
+                break
+            case "binary":
+                document.write("01101101010101010")
+                break
+            default:
+                document.write("Språket stöds inte.")
+            }
+        }
+        answer()
+    </script>
+    
+</body>
+</html>
