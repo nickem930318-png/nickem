@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LåsSäker AB</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { /* Bas styling för hela sidan: Responsiv flex layout med fullskärmsbakgrund */
+            margin: 0; /* Tar bort standardmarginaler */
+            justify-content: center; /* Vertikalt centrerad */
+            align-items:center; /* Horisontellt centrerad */
+        }
+
+        div { /* Standard div beteende: Block-element (redundant men explicit) */
+            display : block;
+        }
+
+        .box { /* Grundläggande marginal för alla box-element */
+        margin: 10px;
+        }
+
+        h1 { /* Huvudrubrik: Liten, centrerad med specialtypsnitt */
+            font-size: 15px; /* Kompakt storlek */
+            color: black; /* Stark kontrast */
+            text-align: center; /* Centrerad text */
+            margin: 20px; /* Avstånd runt rubriken */
+        }
+
+        .container { /* Container för innehåll: Centrerad text med medelstorlek */
+            font-size: medium; /* Standard läsbar storlek */
+            color: black; /* Tydlig text */
+            margin: 5px; /* Avstånd runt containern */
+            text-align: center; /* Centrerad text */
+            display : block; /* Standard block-beteende */
+        }
+
+        .item1 { /* Primär innehållsbox: Semitransparent vit karta med skugga */
+            background-color: rgba(255, 255, 255, 0.9); /* 90% transparent vit bakgrund */
+            padding: 20px; /* Inre marginal för luftighet */
+            border-radius: 8px; /* Runda hörn för modern look */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtil skugga för djup */
+            /* width: 100%; - Tog bort denna för att centrera .item1 i div */
+            max-width: 600px; /* Maxbredd för läsbarhet */
+            margin: 20px auto; /* Auto-marginaler för horisontell centrering */
+        }
+
+        h2 { /* Underrubrik: Något större än h1 med standardtypsnitt */
+            font-size: 18px; /* Bra hierarkistoragelek */
+            margin-bottom: 20px; /* Avstånd till efterföljande innehåll */
+            color: black; /* Stark kontrast */
+        }
+
+        label { /* Etikett-styling: Skapar tydliga, blockbaserade formuläretiketter med stark kontrast */
+            display: block; /* Stapla etiketter ovanför fälten */
+            margin-bottom: 8px; /* Avstånd till input. fältet */
+            font-weight: bold; /* Fet text för tydlighet */
+            color: black; /* Stark kontrast för läsbarhet */
+        }
+
+        input[type="text"], /* Formulär-styling: Standardiserar textfält och textområden för konsekvent, responsiv design */
+        textarea {
+            width: 100%; /* Full bredd för responsivitet */
+            padding: 10px; /* Bekväm inre marginal */
+            margin-bottom: 15px; /* Avstånd mellan fält */
+            border: 1px solid #ccc; /* Subtil kant */
+            border-radius: 4px; /* Lätta runda hörn */
+            font-size: 16px; /* Tillgänglighetsvänlig textstorlek */
+            box-sizing: border-box; /* Inkludera padding i total bredd */
+        }
+
+        textarea { /* Textarea styling: Vertikal storleksändring med minimumhöjd för bekväm textinmatning */
+            resize: vertical; /* Endast höjdjustering (ingen breddändring) */
+            min-height: 100px; /* Minst 100px högt för flera rader text */
+        }
+
+        button { /* Den här koden stylar en knapp med en modern, professionell look  */
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            
+        }
+
+        button:hover { /* aktiveras när användaren hovrar (flyttar muspekaren över) */
+            background-color: #000000;
+        }
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="header"> <!-- div-klass för header -->
+        <div>LåsSäker AB</div></div> <!-- Centerade texten i headern med styling från style.css -->
+            <a href="index.html">
+                <img class="logo" src="logo.png"></img> <!-- Logotyp i vänstra delen av header med länk till startsidan -->
+            </a>
+    </div>
+    <div class="navigation"> <!-- navigationsbar/meny med länkar till de olika sidorna -->
+        <div><a href="index.html">Hem</a></div>
+        <div><a href="about.html">Om oss</a></div>
+        <div><a href="contact.html">Kontakt</a></div>
+    </div>
+    <div class="main">
+        <div class="container">
+        <div class="item1"> <!-- Formulär byggt av Oskar -->
+            <h2>Kontakta oss</h2>
+            <form action="submit" method="POST">
+                <label for="field1">Ditt namn:</label>
+                <input type="text" id="field1" name="field1" placeholder="Skriv här...">
+
+                <label for="field2">Ditt telefonnummer:</label>
+                <input type="text" id="field2" name="field2" placeholder="Skriv här...">
+
+                <label for="message">Vad behöver du hjälp med?</label>
+                <textarea id="message" name="message" rows="5" placeholder="Beskriv ditt ärende..."></textarea>
+                <input type="button" onclick="window.location.href='kontakt-landningsida.html'" value="Submit" />
+            </form>
+        </div>
+        </div>
+    </div>
+    <div class="footer">Follow us on:</div> <!-- Footer med länkar till sociala medier -->
+        <div class="footer"><a href="https://instagram.com" target="_blank">Instagram</a>|<a href="https://facebook.com" target="_blank">Facebook</a>|<a href="https://linkedin.com" target="_blank">LinkedIn</a></div>
+</body>
+</html>

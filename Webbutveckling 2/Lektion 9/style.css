@@ -1,0 +1,120 @@
+* {
+box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    margin: 0;
+}
+header {
+padding: 60px;
+text-align: center;
+background: #eb903a;
+color: white;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(113, 71, 17);
+    justify-content: left;
+}
+nav > a{
+    padding: 10px 10px 10px 5px;
+    text-align: center;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited, a:hover, a:active {
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(115, 34, 34);
+    color: black;
+    justify-content: center;
+}
+
+.side{
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+.main{
+    flex: 70%;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+footer{
+    background: rgb(188, 186, 186);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.fakeimg {
+background-color:lightblue;
+width: 100%;
+padding: 20px;
+}
+
+.home{
+    color: lightcoral; /* Fungerar inte pga prioritering */
+}
+.navcontact{
+    color: lightcoral; /* Fungerar inte pga prioritering */
+}
+
+@media screen and (max-width: 800px) {
+    main, nav {
+    flex-direction: column;
+    }
+}
+
+/* Contact form styling */
+
+.contact {
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 20px 0;
+}
+/* Style the form labels */
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+/* Style the input fields */
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+/* Style the textarea */
+.contact textarea {
+    height: 100px;
+    resize: vertical;
+}
+/* Style the submit button */
+
+.contact button[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Add hover effect to submit button */
+.contact button[type="submit"]:hover {
+    background-color: #45a049;
+}

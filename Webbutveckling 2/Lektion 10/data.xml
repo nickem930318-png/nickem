@@ -1,0 +1,22 @@
+<bibliotek>
+    <bok>
+        <titel>Python för nybörjare</titel>
+        <författare>Anna Svensson</författare>
+    </bok>
+    <bok>
+        <titel>Lär dig JavaScript</titel>
+        <författare>Omar Ali</författare>
+    </bok>
+    <bok>
+        <titel>Hur man lagar bananpaj</titel>
+        <författare>Niclas Kempe</författare>
+    </bok>
+    <bok>
+        <titel>Hur man släcker en eld</titel>
+        <författare>Niclas Kempe</författare>
+    </bok>
+    <bok>
+        <titel>Hur man lurar polisen</titel>
+        <författare>Niclas Kempe</författare>
+    </bok>
+</bibliotek>

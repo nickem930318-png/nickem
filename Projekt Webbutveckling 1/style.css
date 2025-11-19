@@ -1,0 +1,128 @@
+/* Färgpalett: https://paletton.com/#uid=13j0u0kd5xS4bTj8tJdhQrSminc */
+
+
+body{ /* styling för allting inom body */
+    font-family: 'Courier New', Courier, monospace; /* Val av font för hela body */
+    color: white; /* textfärg body */
+    margin: 0; /* marginaler i body */
+}
+p{
+    color: #226D70;
+}
+ 
+.header{
+    display: flex; /* visar att flexbox som ska användas */
+    flex-direction: row; /* riktning på flexboxar */
+    height: 150px; /* höjd på headern */
+    justify-content: center; /* centrerar content i header */
+    align-content:stretch;  
+    background-image: url(lockcrop2.jpg); /* bakgrundsbild i header */
+    background-size:cover; /* väljer storlek på bakgrundsbilden */
+    text-shadow: 2px 2px 4px black; /* skugga bakom text i header */
+}
+
+.logo{ /* class för logo */
+    position: absolute; /* positioneras i förhållande till närmaste förälder */
+    padding: 10px; /* padding för snygg positionering av logotypen */
+    top: -5px; /* specificerar distansen mellan elementets yttre kant och den inre kanten av blocket */
+    height: 20%; /* höjd för logotyp, X% av flexboxens höjd */
+    width: auto; /* width auto för att anpassa automatiskt */
+
+}
+
+.navigation{ /* block för navigation bar */
+    display: flex; /* visar att flexbox som ska användas */
+    flex-direction:row; /* riktning på flexboxar */
+    height: 50px; /* Värde för höjd på nav-bar. Att menytexten inte är i mitten av flex-row är ett kreativt val */
+    justify-content: center; /* centrerar content horizontellt i nav-bar */
+    vertical-align: center; /* centrerar content vertikalt i nav-bar */
+    background-color:#5f9ea0;
+}
+
+.container{ /* förälder till alla divs */
+    min-height: 500px;
+}
+
+.main{ /* styling för huvudblocket på hemsidan med class main */
+    display: flex; /* visar att flexbox som ska användas */
+    flex-direction: row; /* riktning på flexboxar */
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    background-color: #93C5C7; /*  bakgrundsfärg i main-class */
+    color:white; /*  textfärg i main-class */
+    padding: 20px 100px; /*  padding runt content */
+}
+
+.footer{ /* styling av footer längst ned på sidan */
+    display: flex; /* visar att flexbox som ska användas */
+    flex-direction: row; /* riktning på flexboxar */
+    min-height: 35px; /* minsta height på footer-element */
+    max-height: 100vh; 
+    justify-content: center;
+    background-color: #226D70; /* bakgrundsfärg i footer */
+    color: white; /* textfärg i footer */
+}
+
+a:link{ /* styling för länkar */
+    text-decoration: none; /* tar bort den blåa länkfärgen */
+    color: white;
+}
+a:visited{ /* styling för besökta länkar */
+    color: inherit;
+}
+a:hover { /* styling för hover över länkar */
+    color: #FFE9BC;
+
+}
+a:active{ /* styling för länkar som blir aktiverade/klickade på */
+    color: black;
+}
+
+.navigation > div{ /* styling för dev-element under navigation-class */
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 10px;
+}
+
+.header > div{ /* styling för div-element under header-class */
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 150px; /* för att förändra höjd av text i div-element i header */
+    font-size: 30px; /* font-size för text i div-element i header */
+}
+
+#index-bild{ /* styling för bild på startsidan */
+    width: 75%;
+    height: auto;
+}
+
+#about-bild{ /* styling för bild på Om oss */
+    width: 50%;
+    height: auto;
+}
+
+@media (max-width: 600px) { /* gör det möjligt att applicera olika stilar beroende på skärmstorlek, enhetstyp eller andra förhållanden. */
+            .item1 {
+                padding: 15px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 14px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+            .logo {
+                visibility: hidden; /* Döljer logo vid 600px för att det inte ska bli overlap med text i header */
+            }
+            .footer{
+                font-size: 75%; /* sänker font-size vid 600px skärmbredd för att se till att allting syns */
+            }
+        }

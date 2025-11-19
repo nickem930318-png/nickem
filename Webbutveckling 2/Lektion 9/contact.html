@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allmän Övning</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <p>With a flexible layout.</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#Link1">Link</a>
+        <a href="#Link2">Link</a>
+        <a class="navcontact" href="contact.html">Contact us</a>
+    </nav>
+
+    <main>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="file_name" method="get"
+            onsubmit="return validateForm()">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" >
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <br><br>
+            <button type="submit">Send Message</button>
+            </form>
+            </div>
+    </main>
+
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+    
+</body>
+</html>
